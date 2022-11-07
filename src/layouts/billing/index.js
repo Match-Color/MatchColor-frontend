@@ -101,7 +101,9 @@ function Billing() {
               </select>
             )}
           </div>
-          <div className="match"> match!</div>
+          <a href="/tables">
+            <div className="match"> match!</div>
+          </a>
         </div>
       </MDBox>
       <Footer />
