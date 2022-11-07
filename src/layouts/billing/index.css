@@ -68,14 +68,14 @@ border-radius: 20px;
     font-size: 25px;
     font-weight: bold;
     
-  }
-  .styleBox .style option {
+}
+.styleBox .style option {
     background: #F2F1FF;
     margin-left: 80px;
     padding:3px 0;
     font-size: 20px;
-  }
-  .form {
+}
+.form {
     color: black;
     font-size: 25px;
     font-weight: bold;
@@ -86,3 +86,20 @@ border-radius: 20px;
 .label {
     margin-right: 10px;
 }
+.match {
+    cursor:pointer;
+    width: 250px;
+    height: 78px;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    vertical-align: center;
+    margin-top:50px;
+    margin-left: 120px;
+    background: #5E81F4;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    }
