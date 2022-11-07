@@ -83,13 +83,23 @@ function Billing() {
           </div>
           <div className="styleBox">
             <span className="spanItem">Type</span>
-            <select className="style" onChange={handleTopSelect} value={TopSelected}>
-              {topList.map((item) => (
-                <option value={item} key={item}>
-                  {item}
-                </option>
-              ))}
-            </select>
+            {itemValue === "Top" ? (
+              <select className="style" onChange={handleTopSelect} value={TopSelected}>
+                {topList.map((item) => (
+                  <option value={item} key={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <select className="style" onChange={handleBottomSelect} value={BottomSelected}>
+                {bottomList.map((item) => (
+                  <option value={item} key={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
         </div>
       </MDBox>
