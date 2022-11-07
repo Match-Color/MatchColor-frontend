@@ -14,8 +14,12 @@ import pants from "../../assets/images/pants.png";
 
 function Billing() {
   const styleList = ["Tone On Tone", "Tone In Tone", "Monotone"];
+  const topList = ["T-shirts", "blouse", "shirt", "hoodie", "sweatshirt", "neat/sweater"];
+  const bottomList = ["slacks", "jean", "skirt"];
 
   const [StyleSelected, setStyle] = useState("");
+  const [TopSelected, setTop] = useState("");
+  const [BottomSelected, setBottom] = useState("");
   const [itemValue, setItem] = useState("Top");
 
   const handleStyleSelect = (e) => {
@@ -24,6 +28,13 @@ function Billing() {
   const handleItemChange = (e) => {
     setItem(e.target.value);
   };
+  const handleTopSelect = (e) => {
+    setTop(e.target.value);
+  };
+  const handleBottomSelect = (e) => {
+    setBottom(e.target.value);
+  };
+
   return (
     <DashboardLayout>
       <DashboardNavbar absolute isMini />
@@ -69,6 +80,16 @@ function Billing() {
                 Bottom
               </label>
             </form>
+          </div>
+          <div className="styleBox">
+            <span className="spanItem">Type</span>
+            <select className="style" onChange={handleTopSelect} value={TopSelected}>
+              {topList.map((item) => (
+                <option value={item} key={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </MDBox>
