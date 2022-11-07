@@ -51,9 +51,27 @@ function Billing() {
               ))}
             </select>
           </div>
+          <div className="styleBox">
+            <span className="spanItem">Item</span>
+            <form className="form" style={{ display: "inline-block" }}>
+              <label className="label" htmlFor="Top">
+                <input type="radio" value="Top" id="Top" onChange={handleItemChange} name="item" />{" "}
+                Top
+              </label>{" "}
+              <label className="label" htmlFor="Bottom">
+                <input
+                  type="radio"
+                  value="Bottom"
+                  id="Bottom"
+                  onChange={handleItemChange}
+                  name="item"
+                />{" "}
+                Bottom
+              </label>
+            </form>
+          </div>
         </div>
       </MDBox>
-
       <Footer />
     </DashboardLayout>
   );
