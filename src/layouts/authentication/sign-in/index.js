@@ -75,7 +75,7 @@ function Basic() {
               </MDTypography>
             </Grid>
             <Grid item xs={2}>
-              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
+              <MDTypography component={MuiLink} href="/" variant="body1" color="white">
                 <GoogleIcon color="inherit" />
               </MDTypography>
             </Grid>
@@ -102,9 +102,11 @@ function Basic() {
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
-              <MDButton variant="gradient" color="info" fullWidth>
-                sign in
-              </MDButton>
+              <a href="/">
+                <MDButton variant="gradient" color="info" fullWidth>
+                  sign in
+                </MDButton>
+              </a>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
