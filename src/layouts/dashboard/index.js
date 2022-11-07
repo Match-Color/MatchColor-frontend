@@ -18,7 +18,6 @@ Coded by www.creative-tim.com
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDButton from "components/MDButton";
-import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -75,7 +74,7 @@ function Dashboard() {
                       <h1>
                         Select Option&nbsp;&nbsp;&nbsp;&nbsp;
                         <MDButton variant="gradient" color="info" size="large">
-                          <Icon>favorite</Icon>
+                          ➔
                         </MDButton>
                       </h1>
                     </MDBox>
