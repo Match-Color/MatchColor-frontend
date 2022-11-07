@@ -21,3 +21,51 @@
     border-radius: 20px;
 
 }
+
+.selectBox {
+    width: 530px;
+height: 600px;
+
+padding: 10px;
+
+background: #FFFFFF;
+border: 2px solid #ECEEF7;
+box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5);
+border-radius: 20px;
+}
+.styleBox {
+    justify-content: center;
+    
+    margin-left: 60px;
+    margin-right:60px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    height: 86.04px;
+    background: #F2F1FF;
+    border-radius: 12.2195px;
+}
+.pleaseChoose {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+.styleBox .style {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    margin-left: 90px;
+    position: relative;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
+  .styleBox .style option {
+    background: #F2F1FF;
+    margin-left: 80px;
+    padding:3px 0;
+    font-size: 20px;
+  }
