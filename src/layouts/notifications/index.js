@@ -10,6 +10,9 @@ import MDBox from "components/MDBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import person1s from "../../assets/images/person1s.png";
 import person1Edits from "../../assets/images/person1Edits.png";
@@ -29,214 +32,224 @@ import pants25 from "../../assets/images/pants25.png";
 import pants26 from "../../assets/images/pants26.png";
 
 function Notifications() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
+      <Slider {...settings}>
+        {/** 1. 시작 */}
+        <MDBox mb={30}>
+          <Grid container spacing={4}>
+            <div className="topoftop" />
+            <Grid container xs={7}>
+              <span className="imgspan" />
+              <img src={person1s} alt="person" />
+            </Grid>
+            <Grid container xs={5}>
+              <Grid container xs={12}>
+                <div className="topoftop2" />
+                <div className="topColor1" />
+                <div>
+                  <span className="firstspan">Top</span>
+                  <span className="secondspan">Black Navy</span>
+                  <span>#322B2D</span>
+                </div>
+              </Grid>
 
-      <MDBox mb={30}>
-        <Grid container spacing={4}>
-          <div className="topoftop" />
-          <Grid container xs={7}>
-            <span className="imgspan" />
-            <img src={person1s} alt="person" />
-          </Grid>
-          <Grid container xs={5}>
-            <Grid container xs={12}>
-              <div className="topoftop2" />
-              <div className="topColor1" />
-              <div>
-                <span className="firstspan">Top</span>
-                <span className="secondspan">Black Navy</span>
-                <span>#322B2D</span>
-              </div>
-            </Grid>
-
-            <Grid container xs={12}>
-              <div className="bottomColor1" />
-              <div>
-                <span className="firstspan">Bottom</span>
-                <span className="secondspan">Purple Grey</span>
-                <span>#99848A</span>
-              </div>
+              <Grid container xs={12}>
+                <div className="bottomColor1" />
+                <div>
+                  <span className="firstspan">Bottom</span>
+                  <span className="secondspan">Purple Grey</span>
+                  <span>#99848A</span>
+                </div>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-        <MDBox mt={40} ml={10} mr={10}>
-          <h1>Recommend Items</h1>
-          <Grid container spacing={15}>
-            <Grid item xs={4}>
-              <MDBox mt={10} mb={10}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants11} alt="person" />
-                    <span className="brandspan">Brand | 그란데라인</span>
-                    <span className="namespan">Name | 스완클래식팬츠</span>
-                    <span className="pricespan">Price | ₩56,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-              <MDBox mt={10} mb={3}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img width={386} src={pants16} alt="person" />
-                    <span className="brandspan">Brand | 에트몽</span>
-                    <span className="namespan">Name | 투웨이 벤딩 팬츠</span>
-                    <span className="pricespan">Price | ₩93,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
+          <MDBox mt={40} ml={10} mr={10}>
+            <h1>Recommend Items</h1>
+            <Grid container spacing={15}>
+              <Grid item xs={4}>
+                <MDBox mt={10} mb={10}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants11} alt="person" />
+                      <span className="brandspan">Brand | 그란데라인</span>
+                      <span className="namespan">Name | 스완클래식팬츠</span>
+                      <span className="pricespan">Price | ₩56,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+                <MDBox mt={10} mb={3}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img width={386} src={pants16} alt="person" />
+                      <span className="brandspan">Brand | 에트몽</span>
+                      <span className="namespan">Name | 투웨이 벤딩 팬츠</span>
+                      <span className="pricespan">Price | ₩93,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+              </Grid>
+              <Grid item xs={4}>
+                <MDBox mt={10} mb={10}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants12} alt="person" />
+                      <span className="brandspan">Brand | 어프레쉬</span>
+                      <span className="namespan">Name | 코지라인조거팬츠</span>
+                      <span className="pricespan">Price | ₩69,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+                <MDBox mt={10} mb={3}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants15} alt="person" />
+                      <span className="brandspan">Brand | 와르</span>
+                      <span className="namespan">Name | 피그먼트 데님 팬츠</span>
+                      <span className="pricespan">Price | ₩63,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+              </Grid>
+              <Grid item xs={4}>
+                <MDBox mt={10} mb={10}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants13} alt="person" />
+                      <span className="brandspan">Brand | 어프레쉬</span>
+                      <span className="namespan">Name | 코지라인조거팬츠</span>
+                      <span className="pricespan">Price | ₩69,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+                <MDBox mt={10} mb={3}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants14} alt="person" />
+                      <span className="brandspan">Brand | PHILOGRAM</span>
+                      <span className="namespan">Name | 피그먼트 와이드 데님 팬츠</span>
+                      <span className="pricespan">Price | ₩83,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+              </Grid>
             </Grid>
-            <Grid item xs={4}>
-              <MDBox mt={10} mb={10}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants12} alt="person" />
-                    <span className="brandspan">Brand | 어프레쉬</span>
-                    <span className="namespan">Name | 코지라인조거팬츠</span>
-                    <span className="pricespan">Price | ₩69,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-              <MDBox mt={10} mb={3}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants15} alt="person" />
-                    <span className="brandspan">Brand | 와르</span>
-                    <span className="namespan">Name | 피그먼트 데님 팬츠</span>
-                    <span className="pricespan">Price | ₩63,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-            </Grid>
-            <Grid item xs={4}>
-              <MDBox mt={10} mb={10}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants13} alt="person" />
-                    <span className="brandspan">Brand | 어프레쉬</span>
-                    <span className="namespan">Name | 코지라인조거팬츠</span>
-                    <span className="pricespan">Price | ₩69,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-              <MDBox mt={10} mb={3}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants14} alt="person" />
-                    <span className="brandspan">Brand | PHILOGRAM</span>
-                    <span className="namespan">Name | 피그먼트 와이드 데님 팬츠</span>
-                    <span className="pricespan">Price | ₩83,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-            </Grid>
-          </Grid>
+          </MDBox>
         </MDBox>
-      </MDBox>
-      {/** 1. 끝 */}
-      {/** 2. 시작 */}
-      <MDBox mb={30}>
-        <Grid container spacing={4}>
-          <div className="topoftop" />
-          <Grid container xs={7}>
-            <span className="imgspan" />
-            <img src={person2s} alt="person" />
-          </Grid>
-          <Grid container xs={5}>
-            <Grid container xs={12}>
-              <div className="topoftop2" />
-              <div className="topColor1" />
-              <div>
-                <span className="firstspan">Top</span>
-                <span className="secondspan">Black Navy</span>
-                <span>#322B2D</span>
-              </div>
+        {/** 1. 끝 */}
+        {/** 2. 시작 */}
+        <MDBox mb={30}>
+          <Grid container spacing={4}>
+            <div className="topoftop" />
+            <Grid container xs={7}>
+              <span className="imgspan" />
+              <img src={person2s} alt="person" />
             </Grid>
+            <Grid container xs={5}>
+              <Grid container xs={12}>
+                <div className="topoftop2" />
+                <div className="topColor1" />
+                <div>
+                  <span className="firstspan">Top</span>
+                  <span className="secondspan">Black Navy</span>
+                  <span>#322B2D</span>
+                </div>
+              </Grid>
 
-            <Grid container xs={12}>
-              <div className="bottomColor2" />
-              <div>
-                <span className="firstspan">Bottom</span>
-                <span className="secondspan">Warm Brown</span>
-                <span>#66585C</span>
-              </div>
+              <Grid container xs={12}>
+                <div className="bottomColor2" />
+                <div>
+                  <span className="firstspan">Bottom</span>
+                  <span className="secondspan">Warm Brown</span>
+                  <span>#66585C</span>
+                </div>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
 
-        <MDBox mt={40} ml={10} mr={10}>
-          <h1>Recommend Items</h1>
-          <Grid container spacing={15}>
-            <Grid item xs={4}>
-              <MDBox mt={10} mb={10}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants21} alt="person" />
-                    <span className="brandspan">Brand | KOLON</span>
-                    <span className="namespan">Name | brown dyed ankle jeans</span>
-                    <span className="pricespan">Price | ₩63,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-              <MDBox mt={10} mb={3}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img width={386} src={pants24} alt="person" />
-                    <span className="brandspan">Brand | NORDSTORM</span>
-                    <span className="namespan">Name | 하이웨이트스 앵클 진</span>
-                    <span className="pricespan">Price | ₩350,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
+          <MDBox mt={40} ml={10} mr={10}>
+            <h1>Recommend Items</h1>
+            <Grid container spacing={15}>
+              <Grid item xs={4}>
+                <MDBox mt={10} mb={10}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants21} alt="person" />
+                      <span className="brandspan">Brand | KOLON</span>
+                      <span className="namespan">Name | brown dyed ankle jeans</span>
+                      <span className="pricespan">Price | ₩63,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+                <MDBox mt={10} mb={3}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img width={386} src={pants24} alt="person" />
+                      <span className="brandspan">Brand | NORDSTORM</span>
+                      <span className="namespan">Name | 하이웨이트스 앵클 진</span>
+                      <span className="pricespan">Price | ₩350,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+              </Grid>
+              <Grid item xs={4}>
+                <MDBox mt={10} mb={10}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants22} alt="person" />
+                      <span className="brandspan">Brand | NORDSTORM</span>
+                      <span className="namespan">Name | 카고조거팬츠</span>
+                      <span className="pricespan">Price | ₩82,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+                <MDBox mt={10} mb={3}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants25} alt="person" />
+                      <span className="brandspan">Brand | ASOS</span>
+                      <span className="namespan">Name | 코듀로이 진</span>
+                      <span className="pricespan">Price | ₩43,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+              </Grid>
+              <Grid item xs={4}>
+                <MDBox mt={10} mb={10}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants23} alt="person" />
+                      <span className="brandspan">Brand | NORDSTORM</span>
+                      <span className="namespan">Name | 하이 라이즈 스키니 진</span>
+                      <span className="pricespan">Price | ₩420,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+                <MDBox mt={10} mb={3}>
+                  <Card>
+                    <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
+                      <img src={pants26} alt="person" />
+                      <span className="brandspan">Brand | brandy melville</span>
+                      <span className="namespan">Name | 크리스피나 카고 진</span>
+                      <span className="pricespan">Price | ₩63,000</span>
+                    </MDBox>
+                  </Card>
+                </MDBox>
+              </Grid>
             </Grid>
-            <Grid item xs={4}>
-              <MDBox mt={10} mb={10}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants22} alt="person" />
-                    <span className="brandspan">Brand | NORDSTORM</span>
-                    <span className="namespan">Name | 카고조거팬츠</span>
-                    <span className="pricespan">Price | ₩82,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-              <MDBox mt={10} mb={3}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants25} alt="person" />
-                    <span className="brandspan">Brand | ASOS</span>
-                    <span className="namespan">Name | 코듀로이 진</span>
-                    <span className="pricespan">Price | ₩43,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-            </Grid>
-            <Grid item xs={4}>
-              <MDBox mt={10} mb={10}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants23} alt="person" />
-                    <span className="brandspan">Brand | NORDSTORM</span>
-                    <span className="namespan">Name | 하이 라이즈 스키니 진</span>
-                    <span className="pricespan">Price | ₩420,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-              <MDBox mt={10} mb={3}>
-                <Card>
-                  <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
-                    <img src={pants26} alt="person" />
-                    <span className="brandspan">Brand | brandy melville</span>
-                    <span className="namespan">Name | 크리스피나 카고 진</span>
-                    <span className="pricespan">Price | ₩63,000</span>
-                  </MDBox>
-                </Card>
-              </MDBox>
-            </Grid>
-          </Grid>
+          </MDBox>
         </MDBox>
-      </MDBox>
-      {/** 2. 끝 */}
+        {/** 2. 끝 */}
+      </Slider>
       <Footer />
     </DashboardLayout>
   );
