@@ -73,9 +73,11 @@ function Dashboard() {
                     >
                       <h1>
                         Select Option&nbsp;&nbsp;&nbsp;&nbsp;
-                        <MDButton variant="gradient" color="info" size="large">
-                          ➔
-                        </MDButton>
+                        <a href="/billing">
+                          <MDButton variant="gradient" color="info" size="large">
+                            ➔
+                          </MDButton>
+                        </a>
                       </h1>
                     </MDBox>
                   )}
@@ -100,6 +102,7 @@ function Dashboard() {
                       />
                     )}
                   </label>
+
                   <input
                     width="500px"
                     type="file"

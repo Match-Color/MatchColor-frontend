@@ -1,6 +1,4 @@
 import { useState } from "react";
-// @mui material components
-import Grid from "@mui/material/Grid";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -11,7 +9,7 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import shirt from "../../assets/images/shirt.png";
 import pants from "../../assets/images/pants.png";
-
+import "./index.css";
 function Billing() {
   const styleList = ["Tone On Tone", "Tone In Tone", "Monotone"];
   const topList = ["T-shirts", "blouse", "shirt", "hoodie", "sweatshirt", "neat/sweater"];
