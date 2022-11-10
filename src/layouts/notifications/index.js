@@ -1,5 +1,5 @@
 // @mui material components
-import React, { Component } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import "./index1.css";
@@ -15,7 +15,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import person1s from "../../assets/images/person1s.png";
-import person1Edits from "../../assets/images/person1Edits.png";
 import pants11 from "../../assets/images/pants11.png";
 import pants12 from "../../assets/images/pants12.png";
 import pants13 from "../../assets/images/pants13.png";
@@ -23,7 +22,6 @@ import pants14 from "../../assets/images/pants14.png";
 import pants15 from "../../assets/images/pants15.png";
 import pants16 from "../../assets/images/pants16.png";
 import person2s from "../../assets/images/person2s.png";
-import person2Edits from "../../assets/images/person2Edits.png";
 import pants21 from "../../assets/images/pants21.jpg";
 import pants22 from "../../assets/images/pants22.jpg";
 import pants23 from "../../assets/images/pants23.jpg";
@@ -37,8 +35,6 @@ import pants33 from "../../assets/images/pants33.png";
 import pants34 from "../../assets/images/pants34.png";
 import pants35 from "../../assets/images/pants35.png";
 import pants36 from "../../assets/images/pants36.png";
-import nextArrow from "../../assets/images/nextArrow.png";
-import preArrow from "../../assets/images/preArrow.png";
 
 function Notifications() {
   const settings = {
