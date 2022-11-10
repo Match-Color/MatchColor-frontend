@@ -68,7 +68,7 @@ function Notifications() {
                 <div>
                   <span className="firstspan">Top</span>
                   <span className="secondspan">Black Navy</span>
-                  <span>#322B2D</span>
+                  <span className="thirdspan">#322B2D</span>
                 </div>
               </Grid>
 
@@ -77,7 +77,7 @@ function Notifications() {
                 <div>
                   <span className="firstspan">Bottom</span>
                   <span className="secondspan">Purple Grey</span>
-                  <span>#99848A</span>
+                  <span className="thirdspan">#99848A</span>
                 </div>
               </Grid>
             </Grid>
@@ -170,7 +170,7 @@ function Notifications() {
                 <div>
                   <span className="firstspan">Top</span>
                   <span className="secondspan">Black Navy</span>
-                  <span>#322B2D</span>
+                  <span className="thirdspan">#322B2D</span>
                 </div>
               </Grid>
 
@@ -179,7 +179,7 @@ function Notifications() {
                 <div>
                   <span className="firstspan">Bottom</span>
                   <span className="secondspan">Warm Brown</span>
-                  <span>#66585C</span>
+                  <span className="thirdspan">#66585C</span>
                 </div>
               </Grid>
             </Grid>
@@ -273,7 +273,7 @@ function Notifications() {
                 <div>
                   <span className="firstspan">Top</span>
                   <span className="secondspan">Black Navy</span>
-                  <span>#322B2D</span>
+                  <span className="thirdspan">#322B2D</span>
                 </div>
               </Grid>
 
@@ -282,7 +282,7 @@ function Notifications() {
                 <div>
                   <span className="firstspan">Bottom</span>
                   <span className="secondspan">Black</span>
-                  <span>#0D0B0B</span>
+                  <span className="thirdspan">#0D0B0B</span>
                 </div>
               </Grid>
             </Grid>
