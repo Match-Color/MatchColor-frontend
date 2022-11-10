@@ -11,6 +11,7 @@ import Footer from "examples/Footer";
 import shirt from "../../assets/images/shirt.png";
 import pants from "../../assets/images/pants.png";
 import "./index.css";
+import Spinner from "../../components/Loader/Loading2";
 
 function Overview() {
   const styleList = ["Tone On Tone", "Tone In Tone", "Monotone"];
@@ -35,9 +36,20 @@ function Overview() {
     setBottom(e.target.value);
   };
 
+  const [spinnerLoader, setspinnerLoader] = useState(false);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("You clicked submit.");
+    setspinnerLoader(true);
+
+    setTimeout(() => window.open("/notifications", "_self"), 3000);
+  }
+
   return (
     <DashboardLayout>
       <DashboardNavbar absolute isMini />
+      {spinnerLoader ? <Spinner /> : null}
       <MDBox
         display="flex"
         justifyContent="center"
@@ -124,9 +136,11 @@ function Overview() {
                 </select>
               )}
             </div>
-            <a href="/notifications">
-              <div className="match"> match!</div>
-            </a>
+            <form onSubmit={handleSubmit}>
+              <button type="submit" className="match">
+                Match!
+              </button>
+            </form>
           </div>
         </MDBox>
       </MDBox>
