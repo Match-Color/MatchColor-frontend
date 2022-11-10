@@ -118,23 +118,19 @@ function Footer() {
               <MDBox justifyContent="center" alignItems="center">
                 <h1>DEVELOPERS</h1>
                 <h3>
-                  <span>&nbsp;&nbsp;PM&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                  <span>문서연&nbsp;&nbsp;&nbsp;</span>
+                  &nbsp;&nbsp;PM&nbsp;&nbsp;|&nbsp;&nbsp; 문서연&nbsp;&nbsp;&nbsp;
                   <img src={Seoyeon} alt="pm" />
                 </h3>
                 <h3>
-                  <span>&nbsp;&nbsp;QA&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                  <span>강수민&nbsp;&nbsp;&nbsp;</span>
+                  &nbsp;&nbsp;QA&nbsp;&nbsp;|&nbsp;&nbsp; 강수민&nbsp;&nbsp;&nbsp;
                   <img src={Sumin} alt="QA" />
                 </h3>
                 <h3>
-                  <span>&nbsp;&nbsp;PD&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                  <span>박소연&nbsp;&nbsp;&nbsp;</span>
+                  &nbsp;&nbsp;PD&nbsp;&nbsp;|&nbsp;&nbsp; 박소연&nbsp;&nbsp;&nbsp;
                   <img src={Soyeon} alt="pm" />
                 </h3>
                 <h3>
-                  <span>DBA&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                  <span>조남윤&nbsp;&nbsp;&nbsp;</span>
+                  DBA&nbsp;&nbsp;|&nbsp;&nbsp; 조남윤&nbsp;&nbsp;&nbsp;
                   <img src={Namyoon} alt="pm" />
                 </h3>
               </MDBox>
