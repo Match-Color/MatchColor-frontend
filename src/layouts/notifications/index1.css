@@ -39,31 +39,39 @@
     width: 100%;
 }
 
-span {
+.firstspan {
     display:block;
     margin-left:20px;
-}
-.firstspan {
     font-size: 25pt;
     font-weight: bold;
     font-family: serif;
 
 }
 .secondspan{
+    display:block;
+    margin-left:20px;
     font-weight: bold;
     font-family: serif;
 }
+.thirdspan {
+    display:block;
+    margin-left:20px;
+}
 .brandspan{
+    display:block;
+    margin-left:20px;
     margin-top: 15px;
     font-weight: bold;
 
 }
 .namespan{
     font-weight: bold;
-
+    display:block;
+    margin-left:20px;
 }
 .pricespan{
     margin-bottom: 5px;
     font-weight: bold;
-
+    display:block;
+    margin-left:20px;
 }
