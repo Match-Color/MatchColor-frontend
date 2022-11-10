@@ -24,12 +24,12 @@ import pants15 from "../../assets/images/pants15.png";
 import pants16 from "../../assets/images/pants16.png";
 import person2s from "../../assets/images/person2s.png";
 import person2Edits from "../../assets/images/person2Edits.png";
-import pants21 from "../../assets/images/pants21.png";
-import pants22 from "../../assets/images/pants22.png";
-import pants23 from "../../assets/images/pants23.png";
-import pants24 from "../../assets/images/pants24.png";
-import pants25 from "../../assets/images/pants25.png";
-import pants26 from "../../assets/images/pants26.png";
+import pants21 from "../../assets/images/pants21.jpg";
+import pants22 from "../../assets/images/pants22.jpg";
+import pants23 from "../../assets/images/pants23.jpg";
+import pants24 from "../../assets/images/pants24.jpg";
+import pants25 from "../../assets/images/pants25.jpg";
+import pants26 from "../../assets/images/pants26.jpg";
 import person3s from "../../assets/images/person3s.png";
 import pants31 from "../../assets/images/pants31.png";
 import pants32 from "../../assets/images/pants32.png";
@@ -134,9 +134,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img src={pants13} alt="person" />
-                      <span className="brandspan">Brand | 어프레쉬</span>
-                      <span className="namespan">Name | 코지라인조거팬츠</span>
-                      <span className="pricespan">Price | ₩69,000</span>
+                      <span className="brandspan">Brand | Rag & bone</span>
+                      <span className="namespan">Name | jacey velvet pants</span>
+                      <span className="pricespan">Price | ₩66,000</span>
                     </MDBox>
                   </Card>
                 </MDBox>
@@ -193,9 +193,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img src={pants21} alt="person" />
-                      <span className="brandspan">Brand | KOLON</span>
-                      <span className="namespan">Name | brown dyed ankle jeans</span>
-                      <span className="pricespan">Price | ₩63,000</span>
+                      <span className="brandspan">Brand | 육육걸즈</span>
+                      <span className="namespan">Name | 여유핏 골덴 일자 롱팬츠</span>
+                      <span className="pricespan">Price | ₩25,000</span>
                     </MDBox>
                   </Card>
                 </MDBox>
@@ -203,9 +203,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img width={386} src={pants24} alt="person" />
-                      <span className="brandspan">Brand | NORDSTORM</span>
-                      <span className="namespan">Name | 하이웨이트스 앵클 진</span>
-                      <span className="pricespan">Price | ₩350,000</span>
+                      <span className="brandspan">Brand | 니어웨어</span>
+                      <span className="namespan">Name | BURNER broze pants</span>
+                      <span className="pricespan">Price | ₩32,900</span>
                     </MDBox>
                   </Card>
                 </MDBox>
@@ -215,9 +215,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img src={pants22} alt="person" />
-                      <span className="brandspan">Brand | NORDSTORM</span>
-                      <span className="namespan">Name | 카고조거팬츠</span>
-                      <span className="pricespan">Price | ₩82,000</span>
+                      <span className="brandspan">Brand | habi, unni</span>
+                      <span className="namespan">Name | 보이핏 일자 와이드 면바지</span>
+                      <span className="pricespan">Price | ₩39,800</span>
                     </MDBox>
                   </Card>
                 </MDBox>
@@ -225,9 +225,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img src={pants25} alt="person" />
-                      <span className="brandspan">Brand | ASOS</span>
-                      <span className="namespan">Name | 코듀로이 진</span>
-                      <span className="pricespan">Price | ₩43,000</span>
+                      <span className="brandspan">Brand | 프롬비기닝</span>
+                      <span className="namespan">Name | 브룩 헤링본 일자 팬츠</span>
+                      <span className="pricespan">Price | ₩29,000</span>
                     </MDBox>
                   </Card>
                 </MDBox>
@@ -237,9 +237,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img src={pants23} alt="person" />
-                      <span className="brandspan">Brand | NORDSTORM</span>
-                      <span className="namespan">Name | 하이 라이즈 스키니 진</span>
-                      <span className="pricespan">Price | ₩420,000</span>
+                      <span className="brandspan">Brand | 파스텔데이</span>
+                      <span className="namespan">Name | 원터 코듀로이 골덴 일자 팬츠</span>
+                      <span className="pricespan">Price | ₩22,500</span>
                     </MDBox>
                   </Card>
                 </MDBox>
@@ -247,9 +247,9 @@ function Notifications() {
                   <Card>
                     <MDBox mt={1} mb={1} mr={0.5} ml={0.5}>
                       <img src={pants26} alt="person" />
-                      <span className="brandspan">Brand | brandy melville</span>
-                      <span className="namespan">Name | 크리스피나 카고 진</span>
-                      <span className="pricespan">Price | ₩63,000</span>
+                      <span className="brandspan">Brand | 오어유</span>
+                      <span className="namespan">Name | 딥 워싱 브라운 스트레이트핏 팬츠</span>
+                      <span className="pricespan">Price | ₩30,000</span>
                     </MDBox>
                   </Card>
                 </MDBox>
