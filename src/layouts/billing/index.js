@@ -1,20 +1,4 @@
-/**
-=========================================================
-* Material Dashboard 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
-import Grid from "@mui/material/Grid";
+import { useState } from "react";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -23,63 +7,102 @@ import MDBox from "components/MDBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import MasterCard from "examples/Cards/MasterCard";
-import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
-
-// Billing page components
-import PaymentMethod from "layouts/billing/components/PaymentMethod";
-import Invoices from "layouts/billing/components/Invoices";
-import BillingInformation from "layouts/billing/components/BillingInformation";
-import Transactions from "layouts/billing/components/Transactions";
-
+import shirt from "../../assets/images/shirt.png";
+import pants from "../../assets/images/pants.png";
+import "./index.css";
 function Billing() {
+  const styleList = ["Tone On Tone", "Tone In Tone", "Monotone"];
+  const topList = ["T-shirts", "blouse", "shirt", "hoodie", "sweatshirt", "neat/sweater"];
+  const bottomList = ["slacks", "jean", "skirt"];
+
+  const [StyleSelected, setStyle] = useState("");
+  const [TopSelected, setTop] = useState("");
+  const [BottomSelected, setBottom] = useState("");
+  const [itemValue, setItem] = useState("Top");
+
+  const handleStyleSelect = (e) => {
+    setStyle(e.target.value);
+  };
+  const handleItemChange = (e) => {
+    setItem(e.target.value);
+  };
+  const handleTopSelect = (e) => {
+    setTop(e.target.value);
+  };
+  const handleBottomSelect = (e) => {
+    setBottom(e.target.value);
+  };
+
   return (
     <DashboardLayout>
       <DashboardNavbar absolute isMini />
-      <MDBox mt={8}>
-        <MDBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={8}>
-              <Grid container spacing={3}>
-                <Grid item xs={12} xl={6}>
-                  <MasterCard number={4562112245947852} holder="jack peterson" expires="11/22" />
-                </Grid>
-                <Grid item xs={12} md={6} xl={3}>
-                  <DefaultInfoCard
-                    icon="account_balance"
-                    title="salary"
-                    description="Belong Interactive"
-                    value="+$2000"
-                  />
-                </Grid>
-                <Grid item xs={12} md={6} xl={3}>
-                  <DefaultInfoCard
-                    icon="paypal"
-                    title="paypal"
-                    description="Freelance Payment"
-                    value="$455.00"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <PaymentMethod />
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <Invoices />
-            </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={7}>
-              <BillingInformation />
-            </Grid>
-            <Grid item xs={12} md={5}>
-              <Transactions />
-            </Grid>
-          </Grid>
-        </MDBox>
+      <MDBox mb={3} mt={8}>
+        <div className="firstBox">
+          <div className="secondBox">
+            {itemValue === "Top" ? (
+              <img src={shirt} alt="shirt" />
+            ) : (
+              <img src={pants} alt="shirt" />
+            )}
+          </div>
+        </div>
+      </MDBox>
+      <MDBox mb={3} mt={8}>
+        <div className="selectBox">
+          <span className="pleaseChoose">Choose Your Options</span>
+          <div className="styleBox">
+            <span className="spanItem">Style</span>
+            <select className="style" onChange={handleStyleSelect} value={StyleSelected}>
+              {styleList.map((item) => (
+                <option value={item} key={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="styleBox">
+            <span className="spanItem">Item</span>
+            <form className="form" style={{ display: "inline-block" }}>
+              <label className="label" htmlFor="Top">
+                <input type="radio" value="Top" id="Top" onChange={handleItemChange} name="item" />{" "}
+                Top
+              </label>{" "}
+              <label className="label" htmlFor="Bottom">
+                <input
+                  type="radio"
+                  value="Bottom"
+                  id="Bottom"
+                  onChange={handleItemChange}
+                  name="item"
+                />{" "}
+                Bottom
+              </label>
+            </form>
+          </div>
+          <div className="styleBox">
+            <span className="spanItem">Type</span>
+            {itemValue === "Top" ? (
+              <select className="style" onChange={handleTopSelect} value={TopSelected}>
+                {topList.map((item) => (
+                  <option value={item} key={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <select className="style" onChange={handleBottomSelect} value={BottomSelected}>
+                {bottomList.map((item) => (
+                  <option value={item} key={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+            )}
+          </div>
+          <a href="/tables">
+            <div className="match"> match!</div>
+          </a>
+        </div>
       </MDBox>
       <Footer />
     </DashboardLayout>
