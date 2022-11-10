@@ -6,7 +6,7 @@ export const Background = styled.div`
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: 0;
+  right: -140px;
   background: #ffffffb7;
   z-index: 999;
   display: flex;
@@ -16,6 +16,6 @@ export const Background = styled.div`
 `;
 
 export const LoadingText = styled.div`
-  font: 1rem "Noto Sans KR";
+  font: 2rem "Noto Sans KR";
   text-align: center;
 `;

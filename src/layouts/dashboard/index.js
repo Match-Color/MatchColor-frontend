@@ -17,7 +17,7 @@ Coded by www.creative-tim.com
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
-import MDButton from "components/MDButton";
+// import MDButton from "components/MDButton";
 
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
@@ -31,8 +31,13 @@ import Card from "@mui/material/Card";
 import { useState } from "react";
 import fileUpload from "../../assets/images/fileUpload.png";
 
+import Spinner from "../../components/Loader/Loading";
+
+import IconImage from "../../assets/images/icons/selectionIcon.png";
+
 function Dashboard() {
   const [imageSrc, setImageSrc] = useState(fileUpload);
+  const [spinnerLoader, setspinnerLoader] = useState(false);
 
   const encodeFileToBase64 = (fileBlob) => {
     const reader = new FileReader();
@@ -45,9 +50,18 @@ function Dashboard() {
     });
   };
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("You clicked submit.");
+    setspinnerLoader(true);
+
+    setTimeout(() => window.open("/profile", "_self"), 3000);
+  }
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
+      {spinnerLoader ? <Spinner /> : null}
       <MDBox pt={3} pb={3}>
         <Grid container spacing={6}>
           <Grid item xs={12}>
@@ -71,14 +85,12 @@ function Dashboard() {
                       color="text"
                       px={1.5}
                     >
-                      <h1>
-                        Select Option&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="/billing">
-                          <MDButton variant="gradient" color="info" size="large">
-                            ➔
-                          </MDButton>
-                        </a>
-                      </h1>
+                      <h1>Select Option&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                      <form onSubmit={handleSubmit}>
+                        <button type="submit">
+                          <img src={IconImage} alt="IconImage" />
+                        </button>
+                      </form>
                     </MDBox>
                   )}
                 </MDBox>
