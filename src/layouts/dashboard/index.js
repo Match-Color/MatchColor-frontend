@@ -85,7 +85,7 @@ function Dashboard() {
                       color="text"
                       px={1.5}
                     >
-                      <h1>Select Option&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                      <span className="selectOption">Select Option&nbsp;&nbsp;&nbsp;&nbsp;</span>
                       <form onSubmit={handleSubmit}>
                         <button className="selectBtn" type="submit">
                           {/* <img src={IconImage} alt="IconImage" /> */}
