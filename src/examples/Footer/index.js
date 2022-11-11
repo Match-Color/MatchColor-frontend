@@ -77,8 +77,8 @@ function Footer() {
                 </h1>
                 <MDBox mt={2} />
                 <div>대표 | 문서연</div>
-                <div>주소 | 서울시 도봉구 우이천로 381(쌍문동)</div>
-                <div>사업자등록번호 | XXXXXXXX</div>
+                <div>주소 | 경기도 하남시 미사강변동로180</div>
+                <div>사업자등록번호 | 124-76-00470</div>
               </MDBox>
             </MDBox>
           </Grid>
@@ -95,7 +95,7 @@ function Footer() {
               <MDBox justifyContent="center" alignItems="center" mb={8}>
                 <h1>&nbsp;&nbsp;&nbsp;&nbsp;CONTECT</h1>
                 <MDBox mt={2} />
-                <div>TEL | 010-1234-5678</div>
+                <div>TEL | 010-5040-1142</div>
                 <div>EMAIL | anstjdus0702@duksung.ac.kr</div>
                 <MDBox mt={2}>
                   <img src={GoogleDrive} alt="GoogleDrive" /> &nbsp;&nbsp;&nbsp;
