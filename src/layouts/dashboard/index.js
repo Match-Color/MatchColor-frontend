@@ -23,7 +23,7 @@ import MDBox from "components/MDBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-
+import "./index2.css";
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -33,7 +33,7 @@ import fileUpload from "../../assets/images/fileUpload.png";
 
 import Spinner from "../../components/Loader/Loading";
 
-import IconImage from "../../assets/images/icons/selectionIcon.png";
+// import IconImage from "../../assets/images/icons/selectionIcon.png";
 
 function Dashboard() {
   const [imageSrc, setImageSrc] = useState(fileUpload);
@@ -87,8 +87,9 @@ function Dashboard() {
                     >
                       <h1>Select Option&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                       <form onSubmit={handleSubmit}>
-                        <button type="submit">
-                          <img src={IconImage} alt="IconImage" />
+                        <button className="selectBtn" type="submit">
+                          {/* <img src={IconImage} alt="IconImage" /> */}
+                          {">"}
                         </button>
                       </form>
                     </MDBox>
