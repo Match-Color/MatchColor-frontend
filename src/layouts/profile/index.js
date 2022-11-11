@@ -48,7 +48,7 @@ function Overview() {
 
   return (
     <DashboardLayout>
-      <DashboardNavbar absolute isMini />
+      <DashboardNavbar />
       {spinnerLoader ? <Spinner /> : null}
       <MDBox
         display="flex"

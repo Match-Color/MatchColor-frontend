@@ -62,9 +62,10 @@
     margin-left:20px;
     margin-top: 15px;
     font-weight: bold;
-
+    font-size: 18px;
 }
 .namespan{
+    font-size: 18px;
     font-weight: bold;
     display:block;
     margin-left:20px;
@@ -74,4 +75,9 @@
     font-weight: bold;
     display:block;
     margin-left:20px;
+    font-size: 18px;
+}
+.imgTag {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
