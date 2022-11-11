@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 .topColor1 {
     width: 193px;
     height: 176px;
@@ -57,25 +69,34 @@
     display:block;
     margin-left:20px;
 }
+.recommendItem {
+    font-family: 'Happiness-Sans-Bold';
+    font-size: 40px;
+}
 .brandspan{
+    font-family: 'GangwonEduPowerExtraBoldA';
     display:block;
     margin-left:20px;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 18px;
+    margin-top: 25px;
+    font-size: 17px;
+    color:#636363;
 }
 .namespan{
-    font-size: 18px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 23px;
     font-weight: bold;
     display:block;
     margin-left:20px;
+    color:#0D0D0B;
 }
 .pricespan{
+    font-family: 'GangwonEduPowerExtraBoldA';
     margin-bottom: 5px;
     font-weight: bold;
     display:block;
     margin-left:20px;
-    font-size: 18px;
+    font-size: 20px;
+    color:#0D0D0B;
 }
 .imgTag {
     border-radius: 10px;
