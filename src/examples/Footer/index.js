@@ -98,9 +98,15 @@ function Footer() {
                 <div>TEL | 010-5040-1142</div>
                 <div>EMAIL | anstjdus0702@duksung.ac.kr</div>
                 <MDBox mt={2}>
-                  <img src={GoogleDrive} alt="GoogleDrive" /> &nbsp;&nbsp;&nbsp;
-                  <img src={Jira} alt="Jira" /> &nbsp;&nbsp;&nbsp;
-                  <img src={Github} alt="Github" />
+                  <a href="https://docs.google.com/spreadsheets/d/1dupivZ4g_FovewmxbWrvb1FHhyYvJmh8iFI7uPHbCJc/edit#gid=0">
+                    <img src={GoogleDrive} alt="GoogleDrive" /> &nbsp;&nbsp;&nbsp;
+                  </a>
+                  <a href="https://github.com/Match-Color">
+                    <img src={Jira} alt="Jira" /> &nbsp;&nbsp;&nbsp;
+                  </a>
+                  <a href="https://match-color.atlassian.net/jira/software/projects/MC/boards/1/roadmap?shared=&atlOrigin=eyJpIjoiOWQxODRjOGRkYmJjNDgwYWI3MjMyZmI5NDk5MDZjNjkiLCJwIjoiaiJ9">
+                    <img src={Github} alt="Github" />
+                  </a>
                 </MDBox>
               </MDBox>
             </MDBox>
