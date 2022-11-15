@@ -40,7 +40,6 @@ function Overview() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("You clicked submit.");
     setspinnerLoader(true);
 
     setTimeout(() => window.open("/notifications", "_self"), 3000);

@@ -52,7 +52,6 @@ function Dashboard() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("You clicked submit.");
     setspinnerLoader(true);
 
     setTimeout(() => window.open("/profile", "_self"), 3000);
@@ -70,8 +69,8 @@ function Dashboard() {
                 {/* 파일 업로드 확인 */}
                 {/* 업로드 한 파일명: imageSrc */}
                 <MDBox>
-                  {console.log(imageSrc)}
-                  {console.log(imageSrc.toString)}
+                  {/* {console.log(imageSrc)}
+                  {console.log(imageSrc.toString)} */}
                   {imageSrc === "/static/media/fileUpload.82aece8c23679e8bda46.png" ? (
                     <p />
                   ) : (
